@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import getWeb3AndContract from '../utils/blockchain';
 import '../App.css';
 import './BookDetail.css';
 
 const BookDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const bookId = parseInt(id, 10);
   const [bookData, setBookData] = useState({
     title: '',
@@ -37,6 +38,7 @@ const BookDetail = () => {
 
   return (
     <div className="book-detail">
+       <button className="back-button" onClick={() => navigate('/')}>◀ Back</button>
       <h2>{bookData.title}</h2>
       <img className="book-detail-image" src={bookData.imageUrl} alt={bookData.title} />
       <h2>Book description</h2>
