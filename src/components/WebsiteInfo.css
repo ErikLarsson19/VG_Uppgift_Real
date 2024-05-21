@@ -1,0 +1,14 @@
+.website-info{
+    text-align: center;
+    padding: 20px;
+}
+
+.website-info h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.website-info p{
+    font-size: 1.2rem;
+    color: #555;
+}
