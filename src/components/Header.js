@@ -1,9 +1,10 @@
 import React from 'react';
+import './Header.css';
 
 const Header = () => {
   return (
-    <header>
-      <h1>Short Books on the Block</h1>
+    <header className = "header">
+      <h1 className = "header-title">Short Blockchain Books</h1>
     </header>
   );
 };

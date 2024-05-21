@@ -1,18 +1,16 @@
-.navbar {
+.header {
     background-color: #c3c3c3;
     padding: 10px 20px;
     border-bottom: 2px solid #000;
     box-shadow: 0 4px #808080;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
   }
   
-.navbar-brand {
+  .header-title {
+    font-size: 2rem;
     color: #000;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold
-}
-  
+    margin: 0;
+  }
   
