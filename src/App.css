@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 20px; 
+}
+
+.book-card {
+  margin: 10px; 
+  cursor: pointer;
+}
+
+.book-card img {
+  width: 450px; 
+  height: auto; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

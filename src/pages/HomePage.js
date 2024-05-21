@@ -50,7 +50,7 @@ const HomePage = () => {
       const contract = new web3.eth.Contract(contractABI, contractAddress);
 
       try {
-        const bookIndices = [0, 1, 2]; // Known book indices
+        const bookIndices = [0, 1, 2]; //Only three set books in the contract   
         const coverPromises = bookIndices.map(index => contract.methods.getBookCover(index).call());
 
         const covers = await Promise.all(coverPromises);
