@@ -5,22 +5,24 @@ import '../App.css';
 import './BookDetail.css';
 
 const BookDetail = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const bookId = parseInt(id, 10);
+  const { id } = useParams(); //Hook to get the ID from URL params
+  const navigate = useNavigate(); //Hook to navigate to a different page
+  const bookId = parseInt(id, 10); //Parsing the book ID to an integer
   const [bookData, setBookData] = useState({
     title: '',
     description: '',
     content: '',
     imageUrl: ''
-  });
+  }); //State to hold the book data
 
   useEffect(() => {
+    //function to load book data from the blockchain
     const loadBlockchainData = async () => {
       const { web3, contract } = await getWeb3AndContract();
       if (!web3 || !contract) return;
 
       try {
+        // Fecthing the book data using the getBook function in the contract
         const book = await contract.methods.getBook(bookId).call();
         setBookData({
           title: book.title,
@@ -33,8 +35,8 @@ const BookDetail = () => {
       }
     };
 
-    loadBlockchainData();
-  }, [bookId]);
+    loadBlockchainData(); //Call function to load book data
+  }, [bookId]); //Dependency array to run the effect when bookID changes
 
   return (
     <div className="book-detail">
