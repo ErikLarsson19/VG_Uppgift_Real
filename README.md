@@ -2,9 +2,9 @@
 
 ## Overview
 
-Simple web application that showcases how a website can interact with a Solidity contract pushed to the Sepolia testnet
+Simple web application that showcases how a website can interact with a Solidity contract pushed to the Sepolia testnet.
 The collection of small "books" are stored on the blockchain. Each books metadata including its title, description, content and cover image,
-is fetched from a smart contract deployed on the Sepolia testnet. This project demonstrates the intergation of React with blockchain technology in a simple manner.
+is fetched from the smart contract deployed on the Sepolia testnet. This project demonstrates the intergation of React with blockchain technology in a simple manner.
 
 ## Features
 
