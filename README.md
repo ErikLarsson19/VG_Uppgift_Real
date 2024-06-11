@@ -17,7 +17,7 @@ is fetched from the smart contract deployed on the Sepolia testnet. This project
 
 To get started with this project, you'll need to create a `.env` file in the root directory of the project. This file should contain the following environment variables:
 
-```plaintext
+
 REACT_APP_ETHEREUM_NETWORK=sepolia
 REACT_APP_INFURA_API_KEY=your_infura_api_key_here
 
@@ -27,7 +27,7 @@ The API key can be obtained from the Infura website where you have to sign up fo
 Create a new project and aquire your Infura API key.
 Replace your_infura_api_key_here in the .env file with your actual Infura API key.
 
-```plaintext
+
 
 ### Prerequisites
 
