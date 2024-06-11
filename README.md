@@ -35,7 +35,7 @@ Replace your_infura_api_key_here in the .env file with your actual Infura API ke
 
 ## Installation
 
-Clone the repository
+Clone the repository!!
 
 npm install
 
