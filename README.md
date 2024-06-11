@@ -27,6 +27,8 @@ The API key can be obtained from the Infura website where you have to sign up fo
 Create a new project and aquire your Infura API key.
 Replace your_infura_api_key_here in the .env file with your actual Infura API key.
 
+```plaintext
+
 ### Prerequisites
 
 - **Node.js**: Ensure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
