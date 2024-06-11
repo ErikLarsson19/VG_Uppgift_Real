@@ -47,4 +47,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 # Acknowledgements
 
-Thanks to the developers of React, React Router, and Web3.js for their excellent libraries.
+Thanks to the developers of React, React Router, and Web3.js for their excellent libraries. Thank you!
